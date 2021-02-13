@@ -128,6 +128,7 @@ const start = (client = new Client()) => {
         let love = args[0];
         let namahost = args[1];
         if(!love) return client.reply(from, "ip not found!", id)
+        if(!namahost) return client.reply(from, "namanya mana ajg!", id)
         try {
           fs.open(`${namahost}.txt`, 'w+', function (err, file) {
             if (err) throw err;
