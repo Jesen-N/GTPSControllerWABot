@@ -1,6 +1,8 @@
 # GTPSControllerWABot
 GTPSControllerWABot
 
+Credit: GuckTubeYT
+
 # how to use
 1. npm install
 2. node index.js
@@ -19,3 +21,7 @@ GTPSControllerWABot
 - player online info
 - start
 - stop
+
+# Version 2.0
+- add hostmaker
+- add server data.php reader
