@@ -17,10 +17,10 @@ Credit: GuckTubeYT
 - servername = "your name server"
 
 # Version 1.0
-- status
-- player online info
-- start
-- stop
+- add status
+- add player online info
+- add start server
+- add stop server
 
 # Version 2.0
 - add hostmaker
