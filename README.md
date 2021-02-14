@@ -1,5 +1,9 @@
 # GTPSControllerWABot
+
 GTPSControllerWABot
+
+if you found people change the credit name dm me
+Jesen N#9071
 
 Credit: GuckTubeYT
 
