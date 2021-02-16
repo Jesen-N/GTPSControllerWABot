@@ -97,7 +97,7 @@ const start = (client = new Client()) => {
         fs.readFile(`${onlinetxt}`, (err, count) => {
           if (err)
           console.log(err)
-          client.reply(from, "*Player Online :* " + count, id)
+          client.reply(from, "*Players Online :* " + count, id)
       })
       break
 
