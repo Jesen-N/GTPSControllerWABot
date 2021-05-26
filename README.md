@@ -7,6 +7,7 @@
 <p align="center">
 <a href="https://github.com/Jesen-N"><img title="Author" src="https://img.shields.io/badge/Author-Jesen N-blueviolet.svg?style=for-the-badge&logo=github"></a>
 </p>
+
 ## Note
 - Please give credit to me!
 - Do not try to sell this bot, because this bot is 100% open source!
