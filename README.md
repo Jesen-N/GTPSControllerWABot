@@ -34,7 +34,7 @@ Authored and maintained by Jesen N#9071
 ## Thanks to
 - [WA-Automate](https://github.com/open-wa/wa-automate-nodejs)
 - [YogaSakti](https://github.com/YogaSakti/imageToSticker)
-- [GuckTubeYT)(https://github.com/GuckTubeYT/GTPSControllerDiscordBot)
+- [GuckTubeYT](https://github.com/GuckTubeYT/GTPSControllerDiscordBot)
 # Version 1.0
 - add status
 - add player online info
