@@ -26,21 +26,23 @@ Edit the required value in `botwaconfig.json`.
     "nameserver": "GTPS"
 }
 ```
-
-# License
-**GTPSControllerBotWA** © [Jesen-N](https://github.com/Jesen-N), released under the MIT License.
-Authored and maintained by Jesen N#9071
+## Features
+```bash
+> !start (start the server)
+> !stop (stop the server)
+> !count (get player & worlds size)
+> !giverole <player> <number role> (give player role)
+> !givelevel <player> <level> (give player level)
+> !givegems <player> <amount> (give player gems)
+> !changepass <player> <new pass> (change pass player)
+> !delplayer (delete all players file)
+> !delworld (delete all worlds file)
+> !rollbackall (delete players & worlds file)
+```
 
 ## Thanks to
 - [WA-Automate](https://github.com/open-wa/wa-automate-nodejs)
 - [YogaSakti](https://github.com/YogaSakti/imageToSticker)
 - [GuckTubeYT](https://github.com/GuckTubeYT/GTPSControllerDiscordBot)
-# Version 1.0
-- add status
-- add player online info
-- add start server
-- add stop server
 
-# Version 2.0
-- add hostmaker
-- add server data.php reader
+
