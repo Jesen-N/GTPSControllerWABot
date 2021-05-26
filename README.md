@@ -27,10 +27,9 @@ Edit the required value in `botwaconfig.json`.
 }
 ```
 
-# edit config
-- exefile = "name .exe"
-- onlinetxt = "name playeronline.txt"
-- servername = "your name server"
+# License
+**BocchiBot** © [Jesen-N](https://github.com/Jesen-N), released under the MIT License.
+Authored and maintained by Jesen N#9071
 
 # Version 1.0
 - add status
