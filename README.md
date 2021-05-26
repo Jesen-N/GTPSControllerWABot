@@ -28,7 +28,7 @@ Edit the required value in `botwaconfig.json`.
 ```
 
 # License
-**BocchiBot** © [Jesen-N](https://github.com/Jesen-N), released under the MIT License.
+**GTPSControllerBotWA** © [Jesen-N](https://github.com/Jesen-N), released under the MIT License.
 Authored and maintained by Jesen N#9071
 
 # Version 1.0
