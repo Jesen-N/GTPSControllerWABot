@@ -7,10 +7,11 @@ Jesen N#9071
 
 Credit: GuckTubeYT
 
-# how to use
-1. npm install
-2. node index.js
-
+## Install
+```bash
+> npm install
+> node index.js
+```
 # edit filedata/setting.json
 - ownerGTPS = "your number wa"
 - prefix = "what prefix you want"
