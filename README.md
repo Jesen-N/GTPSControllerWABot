@@ -12,9 +12,20 @@ Credit: GuckTubeYT
 > npm install
 > node index.js
 ```
-# edit filedata/setting.json
-- ownerGTPS = "your number wa"
-- prefix = "what prefix you want"
+##  Editing the file
+Edit the required value in `botwaconfig.json`.
+```json
+{
+    "prefix": "!",
+    "ownerNumber": ["62895607019922@c.us", "628"],
+    "exegtps": "server.exe",
+    "player": "players",
+    "world": "worlds",
+    "playeronline": "playeronline.txt",
+    "gemfolder": "gemdb",
+    "nameserver": "GTPS"
+}
+```
 
 # edit config
 - exefile = "name .exe"
