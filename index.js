@@ -2,7 +2,7 @@
 This Bot © By Jesen N#9071.
 Special Thanks To GucktubeYT!
 
-If you found bug, contact me on wa: 0895607019922, Discord: Jesen N#9071.
+If you found bug, contact me on Discord: Jesen N#9071.
 dont forget to star & follow!
 /*/
 const { create, Client } = require('@open-wa/wa-automate')
