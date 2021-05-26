@@ -8,7 +8,8 @@
 ## Note
 - Please give credit to me!
 - Do not try to sell this bot, because this bot is 100% open source!
-- Do not try to reupload and you rename the creator bot!
+- Do not try to reupload and rename the creator bot!
+- Found bug? chat me on Discord!
 
 ## Install
 ```bash
