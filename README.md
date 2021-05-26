@@ -5,14 +5,7 @@
 <a href="#"><img title="Whatsapp-Bot" src="https://img.shields.io/badge/Whatsapp Bot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 
-# GTPSControllerWABot
-
-GTPSControllerWABot
-
-if you found people change the credit name dm me
-Jesen N#9071
-
-Credit: GuckTubeYT
+## Note
 
 ## Install
 ```bash
@@ -38,6 +31,10 @@ Edit the required value in `botwaconfig.json`.
 **GTPSControllerBotWA** © [Jesen-N](https://github.com/Jesen-N), released under the MIT License.
 Authored and maintained by Jesen N#9071
 
+## Thanks to
+- [WA-Automate](https://github.com/open-wa/wa-automate-nodejs)
+- [YogaSakti](https://github.com/YogaSakti/imageToSticker)
+- [GuckTubeYT)(https://github.com/GuckTubeYT/GTPSControllerDiscordBot)
 # Version 1.0
 - add status
 - add player online info
