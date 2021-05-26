@@ -1,0 +1,10 @@
+{
+    "prefix": "!",
+    "ownerNumber": ["62895607019922@c.us", "628"],
+    "exegtps": "server.exe",
+    "player": "players",
+    "world": "worlds",
+    "playeronline": "playeronline.txt",
+    "gemfolder": "gemdb",
+    "nameserver": "GTPS"
+}
