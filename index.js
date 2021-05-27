@@ -125,11 +125,11 @@ const start = async (client = new Client()) => {
                 isRunning(config.exegtps, (status) => {
                     if (status === true)
                     {
-                      return client.reply(from, `📊 *Server Status* 📊\n\nServer Is *UP!*\n*Player Online: ${count}*\n\n*${config.nameserver} Status Server*`, id)
+                      return client.reply(from, `📊 *Server Status* 📊\n\nServer Is *UP!*\n*Players Online:* ${count}\n\n*${config.nameserver} Status Server*`, id)
                     }
                     else
                     {
-                      return client.reply(from, `📊 *Server Status* 📊\n\nServer Is *DOWN!*\n*Player Online: 0*\n\n*${config.nameserver} Status Server*`, id)
+                      return client.reply(from, `📊 *Server Status* 📊\n\nServer Is *DOWN!*\n*Players Online: 0*\n\n*${config.nameserver} Status Server*`, id)
                     }
                 })
               })
