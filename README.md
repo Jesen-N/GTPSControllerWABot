@@ -16,9 +16,12 @@
 
 ## Install
 ```bash
+> gitclone https://github.com/Jesen-N/GTPSControllerWABot.git
+> cd GTPSControllerWABot
 > npm install
 > node index.js
 ```
+
 ##  Editing the file
 Edit the required value in `botwaconfig.json`.
 ```json
