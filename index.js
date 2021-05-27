@@ -213,7 +213,7 @@ const start = async (client = new Client()) => {
               const gemssdb =  parseInt(newgem3)
                 fs.writeFile(gemdb2, gemssdb, function() {
                   const rgemdb = fs.readFileSync(gemdb2)
-                  return client.reply(from, `Gems has been Gived!\n\nof player named: ${args[0]}\nGems Amount: ${args[1]}\nTotal Gems: ${rgemdb}\n\nPlease Re-login for take the effect`, id)
+                  return client.reply(from, `Gems has been Gived!\n\nof player named: ${args[0]}\nGems Amount: ${args[1]}\nTotal Gems: ${rgemdb}`, id)
                 })
                 return
               }
