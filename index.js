@@ -139,9 +139,9 @@ const start = async (client = new Client()) => {
                 if (!isOwner) return client.reply(from, "Sorry you not owner this GTPS", id)
                 const user = args[0]
                 const role = args[1]
-                if(!user) return client.reply(from, `Usage: !changepass <playername> <role number>`, id);
+                if(!user) return client.reply(from, `Usage: !giverole <playername> <role number>`, id);
 
-                if(!role) return client.reply(from, `Usage: !changepass <playername> <role number>`, id);
+                if(!role) return client.reply(from, `Usage: !giverole <playername> <role number>`, id);
 
                 if (!fs.existsSync(config.player)) {
                     return client.reply(from, "Player Folder not found!", id)
@@ -165,9 +165,9 @@ const start = async (client = new Client()) => {
                 if (!isOwner) return client.reply(from, "Sorry you not owner this GTPS", id)
                 const user = args[0]
                 const levels = args[1]
-                if(!user) return client.reply(from, `Usage: !changepass <playername> <level>`, id);
+                if(!user) return client.reply(from, `Usage: !givelevel <playername> <level>`, id);
 
-                if(!levels) return client.reply(from, `Usage: !changepass <playername> <level>`, id);
+                if(!levels) return client.reply(from, `Usage: !givelevel <playername> <level>`, id);
 
                 if (!fs.existsSync(config.player)) {
                     return client.reply(from, "Player Folder not found!", id)
