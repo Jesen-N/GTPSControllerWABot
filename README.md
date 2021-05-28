@@ -44,6 +44,7 @@ Edit the required value in `botwaconfig.json`.
 > !count (get player & worlds size)
 > !giverole <player> <number role> (give player role)
 > !givelevel <player> <level> (give player level)
+> !takelevel <player> <amount> (take player level)
 > !givegems <player> <amount> (give player gems)
 > !changepass <player> <new pass> (change pass player)
 > !delplayer (delete all players file)
