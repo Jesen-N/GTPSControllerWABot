@@ -192,7 +192,7 @@ const start = async (client = new Client()) => {
                 return client.reply(from, `Level has been Gived!\nPlayer Name: ${args[0]}\nGive Level: ${args[1]}\nTotal Level: ${playername2.level}`, id)
                 })
             }
-            if (command == "givelevel") {
+            if (command == "takelevel") {
                 if (!isGroupMsg) return;
                 if (!isOwner) return client.reply(from, "Sorry you not owner this GTPS", id)
                 const user = args[0]
@@ -214,7 +214,7 @@ const start = async (client = new Client()) => {
                 var jsonContent = JSON.parse(contents);
                 var newlev2 = parseInt(jsonContent.level)
                 var levargs = parseInt(levels)
-                newlev2 += levargs
+                newlev2 -= levargs
                 const levelss =  parseInt(newlev2)
 
                 playername2.level = levelss;
