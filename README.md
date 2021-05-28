@@ -40,6 +40,7 @@ Edit the required value in `botwaconfig.json`.
 ```bash
 > !start (start the server)
 > !stop (stop the server)
+> !status (see the status server)
 > !count (get player & worlds size)
 > !giverole <player> <number role> (give player role)
 > !givelevel <player> <level> (give player level)
