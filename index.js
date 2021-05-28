@@ -96,7 +96,7 @@ const start = async (client = new Client()) => {
                 return client.sendText(from, "Work!")
             }
             if (command == "help") {
-                return client.sendText(from, `*GTPSController WA Bot*\n*Prefix:* ${config.prefix}\n\nCommand:\n*!start (start the server)*\n*!stop (stop the server)*\n*!count (get player & worlds size)*\n*!giverole <player> <number role> (give player role)*\n*!givelevel <player> <level> (give player level)*\n*!givegems <player> <amount> (give player gems)*\n*!changepass <player> <new pass> (change pass player)*\n*!delplayer (delete all players file)*\n*!delworld (delete all worlds file)*\n*!rollbackall (delete players & worlds file)*`)
+                return client.sendText(from, `*GTPSController WA Bot*\n*Prefix:* ${config.prefix}\n\nCommand:\n*!start (start the server)*\n*!stop (stop the server)*\n*!status (see the status server)*\n*!count (get player & worlds size)*\n*!giverole <player> <number role> (give player role)*\n*!givelevel <player> <level> (give player level)*\n*!givegems <player> <amount> (give player gems)*\n*!changepass <player> <new pass> (change pass player)*\n*!delplayer (delete all players file)*\n*!delworld (delete all worlds file)*\n*!rollbackall (delete players & worlds file)*`)
             }
             if (command == "start") {
                 if (!isGroupMsg) return;
