@@ -96,7 +96,8 @@ const start = async (client = new Client()) => {
                 return client.sendText(from, "Work!")
             }
             if (command == "help") {
-                return client.sendText(from, `*GTPSController WA Bot*\n*Prefix:* ${config.prefix}\n\nCommand:\n*!start (start the server)*\n*!stop (stop the server)*\n*!status (see the status server)*\n*!count (get player & worlds size)*\n*!giverole <player> <number role> (give player role)*\n*!givelevel <player> <level> (give player level)*\n*!givegems <player> <amount> (give player gems)*\n*!changepass <player> <new pass> (change pass player)*\n*!delplayer (delete all players file)*\n*!delworld (delete all worlds file)*\n*!rollbackall (delete players & worlds file)*`)
+                if (!isGroupMsg) return;
+                return client.sendText(from, `*GTPSController WA Bot*\n*Prefix:* ${config.prefix}\n\nCommand:\n*!start (start the server)*\n*!stop (stop the server)*\n*!status (see the status server)*\n*!count (get player & worlds size)*\n*!giverole <player> <number role> (give player role)*\n*!givelevel <player> <level> (give player level)*\n*!takelevel <player> <amount>*\n*!givegems <player> <amount> (give player gems)*\n*!changepass <player> <new pass> (change pass player)*\n*!delplayer (delete all players file)*\n*!delworld (delete all worlds file)*\n*!rollbackall (delete players & worlds file)*`)
             }
             if (command == "start") {
                 if (!isGroupMsg) return;
@@ -189,6 +190,37 @@ const start = async (client = new Client()) => {
 
                 fs.writeFile(playername1, JSON.stringify(playername2), function writeJSON() {
                 return client.reply(from, `Level has been Gived!\nPlayer Name: ${args[0]}\nGive Level: ${args[1]}\nTotal Level: ${playername2.level}`, id)
+                })
+            }
+            if (command == "givelevel") {
+                if (!isGroupMsg) return;
+                if (!isOwner) return client.reply(from, "Sorry you not owner this GTPS", id)
+                const user = args[0]
+                const levels = args[1]
+                if(!user) return client.reply(from, `Usage: !takelevel <playername> <level>`, id);
+
+                if(!levels) return client.reply(from, `Usage: !takelevel <playername> <level>`, id);
+
+                if (!fs.existsSync(config.player)) {
+                    return client.reply(from, "Player Folder not found!", id)
+                }
+                if (!fs.existsSync(config.player + "/" + user + ".json")) {
+                return  client.reply(from, "Player Not Found!", id)
+                }
+                let playername1 = `./${config.player}/${args[0]}.json`
+                let playername2 = require(playername1);
+
+                var contents = fs.readFileSync(playername1);
+                var jsonContent = JSON.parse(contents);
+                var newlev2 = parseInt(jsonContent.level)
+                var levargs = parseInt(levels)
+                newlev2 += levargs
+                const levelss =  parseInt(newlev2)
+
+                playername2.level = levelss;
+
+                fs.writeFile(playername1, JSON.stringify(playername2), function writeJSON() {
+                return client.reply(from, `Level has been Taked!\nPlayer Name: ${args[0]}\nTake Level: ${args[1]}\nTotal Level: ${playername2.level}`, id)
                 })
             }
             if (command == "givegems") {
