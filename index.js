@@ -1,5 +1,5 @@
 /*/
-This Bot © By Jesen N#9071.
+This Bot Made By Jesen N#9071.
 Special Thanks To GucktubeYT!
 
 If you found bug, contact me on Discord: Jesen N#9071.
