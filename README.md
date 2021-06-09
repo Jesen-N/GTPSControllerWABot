@@ -16,7 +16,7 @@
 
 ## Install
 ```bash
-> gitclone https://github.com/Jesen-N/GTPSControllerWABot.git
+> git clone https://github.com/Jesen-N/GTPSControllerWABot.git
 > cd GTPSControllerWABot
 > npm install
 > node index.js
@@ -27,7 +27,7 @@ Edit the required value in `botwaconfig.json`.
 ```json
 {
     "prefix": "!",
-    "ownerNumber": ["62895607019922@c.us", "628"],
+    "ownerNumber": ["62895607019922@c.us", "628@c.us"],
     "exegtps": "server.exe",
     "player": "players",
     "world": "worlds",
