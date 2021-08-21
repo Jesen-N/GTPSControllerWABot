@@ -97,7 +97,7 @@ const start = async (client = new Client()) => {
             }
             if (command == "help") {
                 if (!isGroupMsg) return;
-                return client.sendText(from, `*GTPSController WA Bot*\n*Prefix:* ${config.prefix}\n\nCommand:\n*!start (start the server)*\n*!stop (stop the server)*\n*!status (see the status server)*\n*!count (get player & worlds size)*\n*!giverole <player> <number role> (give player role)*\n*!givelevel <player> <level> (give player level)*\n*!takelevel <player> <amount>*\n*!givegems <player> <amount> (give player gems)*\n*!changepass <player> <new pass> (change pass player)*\n*!delplayer (delete all players file)*\n*!delworld (delete all worlds file)*\n*!rollbackall (delete players & worlds file)*`)
+                return client.sendText(from, `*GTPSController WA Bot*\n*Prefix:* ${config.prefix}\n\nCommand:\n*!start (start the server)*\n*!stop (stop the server)*\n*!status (see the status server)*\n*!count (get player & worlds size)*\n*!giverole <player> <number role> (give player role)*\n*!givelevel <player> <amount> (give player level)*\n*!takelevel <player> <amount>*\n*!givegems <player> <amount> (give player gems)*\n*!changepass <player> <new pass> (change pass player)*\n*!delplayer (delete all players file)*\n*!delworld (delete all worlds file)*\n*!rollbackall (delete players & worlds file)*`)
             }
             if (command == "start") {
                 if (!isGroupMsg) return;
@@ -166,9 +166,9 @@ const start = async (client = new Client()) => {
                 if (!isOwner) return client.reply(from, "Sorry you not owner this GTPS", id)
                 const user = args[0]
                 const levels = args[1]
-                if(!user) return client.reply(from, `Usage: !givelevel <playername> <level>`, id);
+                if(!user) return client.reply(from, `Usage: !givelevel <playername> <amount>`, id);
 
-                if(!levels) return client.reply(from, `Usage: !givelevel <playername> <level>`, id);
+                if(!levels) return client.reply(from, `Usage: !givelevel <playername> <amount>`, id);
 
                 if (!fs.existsSync(config.player)) {
                     return client.reply(from, "Player Folder not found!", id)
@@ -197,9 +197,9 @@ const start = async (client = new Client()) => {
                 if (!isOwner) return client.reply(from, "Sorry you not owner this GTPS", id)
                 const user = args[0]
                 const levels = args[1]
-                if(!user) return client.reply(from, `Usage: !takelevel <playername> <level>`, id);
+                if(!user) return client.reply(from, `Usage: !takelevel <playername> <amount>`, id);
 
-                if(!levels) return client.reply(from, `Usage: !takelevel <playername> <level>`, id);
+                if(!levels) return client.reply(from, `Usage: !takelevel <playername> <amount>`, id);
 
                 if (!fs.existsSync(config.player)) {
                     return client.reply(from, "Player Folder not found!", id)
@@ -243,7 +243,7 @@ const start = async (client = new Client()) => {
               var gemargs2 = parseInt(gems)
               newgem3 += gemargs2
               const gemssdb =  parseInt(newgem3)
-                fs.writeFile(gemdb2, gemssdb, function() {
+                fs.writeFile(gemdb2, gemssdb.toString(), function() {
                   const rgemdb = fs.readFileSync(gemdb2)
                   return client.reply(from, `Gems has been Gived!\n\nof player named: ${args[0]}\nGems Amount: ${args[1]}\nTotal Gems: ${rgemdb}`, id)
                 })
