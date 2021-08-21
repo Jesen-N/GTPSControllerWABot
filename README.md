@@ -27,7 +27,7 @@ Edit the required value in `botwaconfig.json`.
 ```json
 {
     "prefix": "!",
-    "ownerNumber": ["62895607019922@c.us", "628@c.us"],
+    "ownerNumber": ["628xxx@c.us", "628xxx@c.us"],
     "exegtps": "server.exe",
     "player": "players",
     "world": "worlds",
@@ -43,7 +43,7 @@ Edit the required value in `botwaconfig.json`.
 > !status (see the status server)
 > !count (get player & worlds size)
 > !giverole <player> <number role> (give player role)
-> !givelevel <player> <level> (give player level)
+> !givelevel <player> <amount> (give player level)
 > !takelevel <player> <amount> (take player level)
 > !givegems <player> <amount> (give player gems)
 > !changepass <player> <new pass> (change pass player)
