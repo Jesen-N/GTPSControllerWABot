@@ -97,7 +97,7 @@ const start = async (client = new Client()) => {
             }
             if (command == "help") {
                 if (!isGroupMsg) return;
-                return client.sendText(from, `*GTPSController WA Bot*\n*Prefix:* ${config.prefix}\n\nCommand:\n*!start (start the server)*\n*!stop (stop the server)*\n*!status (see the status server)*\n*!count (get player & worlds size)*\n*!giverole <player> <number role> (give player role)*\n*!givelevel <player> <amount> (give player level)*\n*!takelevel <player> <amount>*\n*!givegems <player> <amount> (give player gems)*\n*!changepass <player> <new pass> (change pass player)*\n*!delplayer (delete all players file)*\n*!delworld (delete all worlds file)*\n*!rollbackall (delete players & worlds file)*`)
+                return client.sendText(from, `*GTPSController WA Bot*\n*Prefix:* ${config.prefix}\n\nCommand:\n*${config.prefix}start (start the server)*\n*${config.prefix}stop (stop the server)*\n*${config.prefix}status (see the status server)*\n*${config.prefix}count (get player & worlds size)*\n*${config.prefix}giverole <player> <number role> (give player role)*\n*${config.prefix}givelevel <player> <amount> (give player level)*\n*${config.prefix}takelevel <player> <amount>*\n*${config.prefix}givegems <player> <amount> (give player gems)*\n*${config.prefix}changepass <player> <new pass> (change pass player)*\n*${config.prefix}delplayer (delete all players file)*\n*${config.prefix}delworld (delete all worlds file)*\n*${config.prefix}rollbackall (delete players & worlds file)*`)
             }
             if (command == "start") {
                 if (!isGroupMsg) return;
