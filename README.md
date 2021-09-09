@@ -38,18 +38,18 @@ Edit the required value in `botwaconfig.json`.
 ```
 ## Features
 ```bash
-> !start (start the server)
-> !stop (stop the server)
-> !status (see the status server)
-> !count (get player & worlds size)
-> !giverole <player> <number role> (give player role)
-> !givelevel <player> <amount> (give player level)
-> !takelevel <player> <amount> (take player level)
-> !givegems <player> <amount> (give player gems)
-> !changepass <player> <new pass> (change pass player)
-> !delplayer (delete all players file)
-> !delworld (delete all worlds file)
-> !rollbackall (delete players & worlds file)
+> start (start the server)
+> stop (stop the server)
+> status (see the status server)
+> count (get player & worlds size)
+> giverole <player> <number role> (give player role)
+> givelevel <player> <amount> (give player level)
+> takelevel <player> <amount> (take player level)
+> givegems <player> <amount> (give player gems)
+> changepass <player> <new pass> (change pass player)
+> delplayer (delete all players file)
+> delworld (delete all worlds file)
+> rollbackall (delete players & worlds file)
 ```
 
 ## Thanks to
